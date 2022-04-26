@@ -19,8 +19,8 @@
 
 def solution(sequence: list) -> bool:
     removed_one: bool = False
-    prev_maxval = None
-    maxval = None
+    prev_maxval: int = None
+    maxval: int = None
     for item in sequence:
         if (not maxval) or (item > maxval):
             prev_maxval = maxval
