@@ -26,7 +26,7 @@ Array of the longest strings, stored in the same order as in the inputArray.
 from collections import Counter
 
 
-def gen_solution(inputArray):
+def gen_solution(inputArray: list):
     max_value = max(map(len, inputArray))
     for x in inputArray:
         if len(x) == max_value:
