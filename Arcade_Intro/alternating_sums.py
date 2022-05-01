@@ -22,7 +22,7 @@ Guaranteed constraints:
 """
 
 
-def solution(array: list):
+def solution(array: list) -> tuple:
     team1 = 0
     team2 = 0
     for n, x in enumerate(array, start=1):
