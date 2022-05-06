@@ -35,7 +35,7 @@ Rectangular matrix of the same size as matrix each cell of which contains an int
 """
 
 
-def solution(matrix):
+def solution(matrix: list) -> list:
     number_of_rows: int = len(matrix)
     number_of_columns: int = len(matrix[0])
     result = [[0 for i in range(number_of_columns)] for j in range(number_of_rows)]
