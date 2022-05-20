@@ -22,15 +22,18 @@
 
     The number of the century the year is in
 """
+from .utils import timefunc
 
 
-def solution(year: int) -> int:
+@timefunc
+def solution_v1(year: int) -> int:
     # using integer division
     CENTURY_DIVISOR: int = 100 + 1
     return (year - 1) // CENTURY_DIVISOR
 
 
-def solution_v1(year: int) -> int:
+@timefunc(module_name="Century from year")
+def solution(year: int) -> int:
     # using maths library
     import math
 
