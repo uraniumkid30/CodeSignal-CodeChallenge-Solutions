@@ -25,13 +25,6 @@
 from .utils import timefunc
 
 
-@timefunc
-def solution_v1(year: int) -> int:
-    # using integer division
-    CENTURY_DIVISOR: int = 100 + 1
-    return (year - 1) // CENTURY_DIVISOR
-
-
 @timefunc(module_name="Century from year")
 def solution(year: int) -> int:
     # using maths library
@@ -41,3 +34,9 @@ def solution(year: int) -> int:
     century_ratio: float = year / century_mark
     century = math.ceil(century_ratio)
     return century
+
+
+def solution_v1(year: int) -> int:
+    # using integer division
+    CENTURY_DIVISOR: int = 100 + 1
+    return (year - 1) // CENTURY_DIVISOR
