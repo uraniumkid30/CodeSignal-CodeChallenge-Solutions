@@ -24,8 +24,10 @@ Guaranteed constraints:
 
 The area of the n-interesting polygon.
 """
+from .utils import timefunc
 
 
+@timefunc("Shape Area")
 def solution(polygon_number: int) -> int:
     term_a = 2 * (polygon_number ** 2)
     term_b = 2 * polygon_number
