@@ -15,6 +15,10 @@
 
     You can remove 3 from the array to get the strictly increasing sequence [1, 2]. Alternately, you can remove 2 to get the strictly increasing sequence [1, 3].
 """
+from .utils import timefunc
+
+
+timefunc("Almost Increasing Sequence.")
 
 
 def solution(sequence: list) -> bool:
