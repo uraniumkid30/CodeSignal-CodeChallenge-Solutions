@@ -18,9 +18,7 @@
 from .utils import timefunc
 
 
-timefunc("Almost Increasing Sequence.")
-
-
+@timefunc("Almost Increasing Sequence.")
 def solution(sequence: list) -> bool:
     removed_one: bool = False
     prev_maxval: int = None
