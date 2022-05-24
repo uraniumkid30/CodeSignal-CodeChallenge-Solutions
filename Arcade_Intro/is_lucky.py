@@ -24,8 +24,10 @@ Guaranteed constraints:
 
 true if n is a lucky ticket number, false otherwise.
 """
+from .utils import timefunc
 
 
+@timefunc("Is Lucky")
 def solution(n: int) -> bool:
     num_list = list(str(n))
     mid_point: int = len(num_list) // 2
