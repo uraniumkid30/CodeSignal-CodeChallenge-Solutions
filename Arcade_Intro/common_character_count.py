@@ -28,10 +28,11 @@ Guaranteed constraints:
 
 [output] integer
 """
-
+from .utils import timefunc
 from collections import Counter
 
 
+@timefunc("Common Character Count")
 def solution(s1: str, s2: str) -> int:
     s1_count: Counter = Counter(s1)
     s2_count: Counter = Counter(s2)
