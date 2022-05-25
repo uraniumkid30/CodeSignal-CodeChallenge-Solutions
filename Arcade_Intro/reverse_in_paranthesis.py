@@ -29,8 +29,10 @@ Guaranteed constraints:
 
 Return inputString, with all the characters that were in parentheses reversed.
 """
+from .utils import timefunc
 
 
+@timefunc("reverse in parenthesis")
 def solution(inputString: str) -> str:
     s = inputString
     chars: list = list(s)
