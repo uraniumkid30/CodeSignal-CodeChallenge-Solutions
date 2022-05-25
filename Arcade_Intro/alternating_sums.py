@@ -20,8 +20,10 @@ Guaranteed constraints:
 
 [output] array.integer
 """
+from .utils import timefunc
 
 
+@timefunc("Alternating Sums")
 def solution(array: list) -> tuple:
     team1 = 0
     team2 = 0
