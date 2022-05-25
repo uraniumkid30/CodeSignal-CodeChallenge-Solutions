@@ -29,8 +29,10 @@ Guaranteed constraints:
 
 The same matrix of characters, framed with a border of asterisks of width 1.
 """
+from .utils import timefunc
 
 
+@timefunc("Add Border")
 def solution(picture: list) -> list:
     max_len: int = max(map(len, picture))
     additive: list = ["**" + ("*" * max_len)]
