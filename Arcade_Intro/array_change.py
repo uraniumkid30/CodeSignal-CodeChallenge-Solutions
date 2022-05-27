@@ -21,8 +21,10 @@ Guaranteed constraints:
 The minimal number of moves needed to obtain a strictly increasing sequence from inputArray.
 It's guaranteed that for the given test cases the answer always fits signed 32-bit integer type.
 """
+from .utils import timefunc
 
 
+@timefunc("Array Change")
 def solution(inputArray: list) -> int:
     number_of_moves: int = 0
     first_item = inputArray[0]
