@@ -35,11 +35,11 @@ Guaranteed constraints:
 
 The maximal possible sum.
 """
-from .utils import timefunc
+from .utils import time_solution
 from itertools import islice
 
 
-@timefunc("Array mac consecutive sum")
+@time_solution("Array mac consecutive sum")
 def solution(array: list, n_elements: int):
     comperator = max_item = sum(array[:n_elements])
 

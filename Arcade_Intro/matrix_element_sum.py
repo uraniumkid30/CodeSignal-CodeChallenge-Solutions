@@ -29,10 +29,10 @@ example 2
 
 Note that the free room in the final column makes the full column unsuitable for bots (not just the room directly beneath it). Thus, the answer is 1 + 1 + 1 + 5 + 1 = 9.
 """
-from .utils import timefunc
+from .utils import time_solution
 
 
-@timefunc("Matrix Element Sum")
+@time_solution("Matrix Element Sum")
 def solution(matrix: list) -> int:
     total: int = 0
     for j in range(0, len(matrix[0])):

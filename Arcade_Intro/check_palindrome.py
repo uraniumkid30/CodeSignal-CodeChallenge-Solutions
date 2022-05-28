@@ -26,15 +26,15 @@
 """
 
 from typing import Union
-from .utils import timefunc
+from .utils import time_solution
 
 
-@timefunc(module_name="Check Palindrome")
+@time_solution(module_name="Check Palindrome")
 def solution(inputValue: Union[int, str]) -> bool:
     return str(inputValue) == str(inputValue)[::-1]
 
 
-@timefunc(module_name="Check Palindrome")
+@time_solution(module_name="Check Palindrome")
 def solution_v2(inputValue: Union[int, str]) -> bool:
     reversed_input: str = "".join(reversed(str(inputValue)))
     return str(inputValue) == reversed_input

@@ -50,6 +50,9 @@ Guaranteed constraints:
 true if you and your friend are equally strong, false otherwise.
 """
 
+from .utils import time_solution
 
+
+@time_solution("Are Equally Strong.")
 def solution(*args) -> bool:
     return (args[:2] == args[2:]) or (args[:2] == args[2:][::-1])

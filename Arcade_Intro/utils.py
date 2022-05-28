@@ -2,9 +2,9 @@ import time
 import functools
 
 
-def timefunc(module_name):
+def time_solution(module_name):
     def timer(func):
-        """timefunc's doc"""
+        """time_solution's doc"""
 
         @functools.wraps(func)
         def time_closure(*args, **kwargs):

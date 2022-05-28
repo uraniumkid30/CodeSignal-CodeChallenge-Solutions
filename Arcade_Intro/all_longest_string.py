@@ -24,7 +24,8 @@ Array of the longest strings, stored in the same order as in the inputArray.
 """
 
 from collections import Counter
-from .utils import timefunc
+from .utils import time_solution
+
 
 def gen_solution(inputArray: list):
     max_value = max(map(len, inputArray))
@@ -32,6 +33,7 @@ def gen_solution(inputArray: list):
         if len(x) == max_value:
             yield x
 
-@timefunc("All longest String")
+
+@time_solution("All longest String")
 def solution(inputArray):
     return list(gen_solution(inputArray))

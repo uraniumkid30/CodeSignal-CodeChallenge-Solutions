@@ -22,10 +22,10 @@ Guaranteed constraints:
 
 Sorted array a with all the trees untouched.
 """
-from .utils import timefunc
+from .utils import time_solution
 
 
-@timefunc("Sort By Height")
+@time_solution("Sort By Height")
 def solution(array: list):
     sorted_array = sorted([item for item in array if item != -1])
     counter = 0

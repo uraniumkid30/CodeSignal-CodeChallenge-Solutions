@@ -14,10 +14,10 @@ Ratiorg needs statues of sizes 4, 5 and 7.
 """
 
 from typing import Union
-from .utils import timefunc
+from .utils import time_solution
 
 
-@timefunc("Make Array Consecutive")
+@time_solution("Make Array Consecutive")
 def solution(statues: Union[tuple, list]) -> int:
     ranged_statues = range(min(statues), max(statues))
     missing_set = set(ranged_statues).difference(set(statues))

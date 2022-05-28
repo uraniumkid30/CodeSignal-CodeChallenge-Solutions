@@ -45,7 +45,10 @@ b.length = a.length,
 true if a and b are similar, false otherwise
 """
 
+from .utils import time_solution
 
+
+@time_solution("Are Similar")
 def solution(array_a: list, array_b: list) -> bool:
     if array_a == array_b:
         return True

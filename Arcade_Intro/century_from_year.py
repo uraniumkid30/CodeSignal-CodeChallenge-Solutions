@@ -22,10 +22,10 @@
 
     The number of the century the year is in
 """
-from .utils import timefunc
+from .utils import time_solution
 
 
-@timefunc(module_name="Century from year")
+@time_solution(module_name="Century from year")
 def solution(year: int) -> int:
     # using maths library
     import math

@@ -20,8 +20,10 @@ Guaranteed constraints:
 
 The maximal absolute difference.
 """
+from .utils import time_solution
 
 
+@time_solution("Array Maximal Difference")
 def solution(inputArray: list) -> int:
     for item in range(len(inputArray)):
         if item == 0:
