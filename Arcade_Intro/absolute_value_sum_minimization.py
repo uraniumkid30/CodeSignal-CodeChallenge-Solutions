@@ -40,6 +40,9 @@ An integer representing the element from a that minimizes the sum of its absolut
 
 import math
 
+from .utils import time_solution
 
+
+@time_solution("Absolute Value Sum Maximization")
 def solution(array: list) -> int:
     return array[math.ceil(len(array) / 2) - 1]
