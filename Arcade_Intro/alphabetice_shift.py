@@ -22,8 +22,10 @@ The resulting string after replacing each of its characters.
 """
 
 import string
+from .utils import time_solution
 
 
+@time_solution("Alphabetic Shift")
 def solution(inputString: str) -> str:
     str_bank: str = string.ascii_lowercase
     bank: dict = dict(zip(str_bank, range(len(str_bank))))
