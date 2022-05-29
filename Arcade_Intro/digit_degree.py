@@ -24,12 +24,14 @@ Guaranteed constraints:
 
 [output] integer
 """
+from .utils import time_solution
 
 
 def sort_return(number: str) -> str:
     return str(sum(list(map(int, number))))
 
 
+@time_solution(module_name="Digit Degree")
 def solution(n: int) -> int:
     number = str(n)
     result = 0

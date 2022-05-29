@@ -23,6 +23,9 @@ Guaranteed constraints:
 
 """
 
+from .utils import time_solution
 
+
+@time_solution(module_name="Different Symbols Naive")
 def solution(letters: str) -> int:
     return len(list(set(letters)))
