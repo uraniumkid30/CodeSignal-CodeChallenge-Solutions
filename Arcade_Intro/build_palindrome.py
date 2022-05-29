@@ -19,8 +19,10 @@ Guaranteed constraints:
 
 [output] string
 """
+from .utils import time_solution
 
 
+@time_solution("Build Palindrome")
 def solution(st: str) -> str:
     str_length: int = len(st)
     for i in range(str_length):

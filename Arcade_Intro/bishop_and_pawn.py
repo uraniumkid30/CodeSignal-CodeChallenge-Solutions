@@ -42,8 +42,10 @@ pawn.length = 2,
 
 true if the bishop can capture the pawn, false otherwise.
 """
+from .utils import time_solution
 
 
+@time_solution("Bishop and Pawn")
 def solution(bishop: list, pawn: list) -> bool:
     if abs(int(bishop[1]) - int(pawn[1])) == abs(ord(bishop[0]) - ord(pawn[0])):
         return True

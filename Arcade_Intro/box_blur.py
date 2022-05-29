@@ -46,7 +46,10 @@ Guaranteed constraints:
 A blurred image represented as integers, obtained through the process in the description.
 """
 
+from .utils import time_solution
 
+
+@time_solution("Box Blur")
 def solution(array: list):
     array_length: int = len(array)
     RUN_LENGTH: int = 9
