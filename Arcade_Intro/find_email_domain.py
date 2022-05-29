@@ -22,7 +22,9 @@ Guaranteed constraints:
 
 [output] string
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Find Email Domain")
 def solution(address: str) -> str:
     return address.split("@")[-1]

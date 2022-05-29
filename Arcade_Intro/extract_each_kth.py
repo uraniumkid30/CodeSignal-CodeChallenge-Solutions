@@ -27,8 +27,10 @@ inputArray without elements k - 1, 2k - 1, 3k - 1 etc.
 """
 
 from collections import Counter
+from .utils import time_solution
 
 
+@time_solution(module_name="Extract Each Kth")
 def solution(inputArray: list, k: int) -> list:
     result: list = []
     for index, element in enumerate(inputArray):

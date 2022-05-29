@@ -20,8 +20,10 @@ Guaranteed constraints:
 
 true if all digits of n are even, false otherwise.
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Even Digits Only")
 def solution(num: int) -> bool:
     for item in str(num):
         x: int = int(item)
