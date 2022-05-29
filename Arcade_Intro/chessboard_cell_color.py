@@ -35,8 +35,10 @@ cell2.length = 2,
 
 true if both cells have the same color, false otherwise.
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Chess Board Cell Color")
 def solution(cell1: str, cell2: str) -> bool:
     board_letters: str = "ABCDEFGH"
     bank: dict = dict(zip(board_letters, range(1, len(board_letters) + 1)))

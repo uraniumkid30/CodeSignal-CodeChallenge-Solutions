@@ -28,8 +28,10 @@ Guaranteed constraints:
 
 [output] integer
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Circle Of Numbers")
 def solution(total_number: int, firstNumber: int) -> int:
     mid = total_number / 2
     result: int = firstNumber + mid

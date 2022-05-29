@@ -43,8 +43,10 @@ deposit < threshold ≤ 200.
 
 The number of years it would take to hit the threshold.
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Deposit Profit")
 def solution(deposit: int, rate: int, threshold: int) -> int:
     year_count = 0
     while deposit < threshold:
