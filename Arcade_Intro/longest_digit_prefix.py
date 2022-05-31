@@ -19,8 +19,10 @@ Guaranteed constraints:
 """
 
 import re
+from .utils import time_solution
 
 
+@time_solution(module_name="Longest digit Prefix")
 def solution(inputString: str) -> str:
     pattern: str = "\d+"
     match_result = re.match(pattern, inputString)

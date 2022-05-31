@@ -27,8 +27,10 @@ Guaranteed constraints:
 Encoded version of s.
 
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Line Encoding")
 def solution(s):
     check_value = 1
     result = []
