@@ -51,8 +51,10 @@ Guaranteed constraints:
 
 [output] integer
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Knapsack Light.")
 def solution(value1: int, weight1: int, value2: int, weight2: int, maxW: int) -> int:
     combined_weights = weight1 + weight2
     if all([weight1 > maxW, weight2 <= maxW]):

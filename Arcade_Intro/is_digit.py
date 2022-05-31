@@ -22,7 +22,9 @@ Given symbol is from ASCII table.
 
 true if symbol is a digit, false otherwise.
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Is Digit")
 def solution(symbol):
     return symbol.isdigit()

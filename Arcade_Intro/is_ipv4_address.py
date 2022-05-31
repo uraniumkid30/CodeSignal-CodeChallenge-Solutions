@@ -34,8 +34,10 @@ Guaranteed constraints:
 true if inputString satisfies the IPv4 address naming rules, false otherwise.
 
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Is IPV4 Address")
 def solution(inputString: str) -> bool:
     ip_number = inputString.split(".")
     if len(ip_number) != 4:
