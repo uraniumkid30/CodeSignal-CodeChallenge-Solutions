@@ -22,8 +22,10 @@ Guaranteed constraints:
 
 [output] char
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="First Digit")
 def solution(inputString: list) -> str:
     for x in inputString:
         if x.isdigit():

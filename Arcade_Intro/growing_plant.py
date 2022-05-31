@@ -51,7 +51,10 @@ Guaranteed constraints:
 The number of days that it will take for the plant to reach / pass desiredHeight.
 """
 
+from .utils import time_solution
 
+
+@time_solution(module_name="Growing Plant")
 def solution(upSpeed: int, downSpeed: int, desiredHeight: int) -> int:
     current_height = 0
     daily_count = 0

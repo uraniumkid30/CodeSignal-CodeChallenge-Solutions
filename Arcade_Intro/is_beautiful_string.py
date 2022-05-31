@@ -32,8 +32,11 @@ Guaranteed constraints:
 
 Return true if the string is beautiful, false otherwise.
 """
-
 import string
+from .utils import time_solution
+
+
+@time_solution(module_name="Is Beautiful String")
 def solution(inputString: str) -> bool:
-    result:list = [inputString.count(item) for item in string.ascii_lowercase]
+    result: list = [inputString.count(item) for item in string.ascii_lowercase]
     return result[::-1] == sorted(result)
