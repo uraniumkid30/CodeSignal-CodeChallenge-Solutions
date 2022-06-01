@@ -33,8 +33,10 @@ Guaranteed constraints:
 
 Rectangular matrix of the same size as matrix each cell of which contains an integer equal to the number of mines in the neighboring cells. Two cells are called neighboring if they share at least one corner.
 """
+from .utils import time_solution
 
 
+@time_solution(module_name="Mine Sweep")
 def solution(matrix: list) -> list:
     number_of_rows: int = len(matrix)
     number_of_columns: int = len(matrix[0])

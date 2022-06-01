@@ -25,8 +25,10 @@ true if the characters of the inputString can be rearranged to form a palindrome
 """
 
 from collections import Counter
+from .utils import time_solution
 
 
+@time_solution(module_name="Palindrome Rearrangement")
 def solution(inputString: str) -> bool:
     item_frequency: Counter = Counter(inputString)
     odd_no_count: int = 0
