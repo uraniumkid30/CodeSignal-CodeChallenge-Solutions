@@ -32,7 +32,7 @@ Note that the free room in the final column makes the full column unsuitable for
 from .utils import time_solution
 
 
-@time_solution("Matrix Element Sum")
+@time_solution(module_name="Matrix Element Sum")
 def solution(matrix: list) -> int:
     total: int = 0
     for j in range(0, len(matrix[0])):

@@ -17,7 +17,7 @@ from typing import Union
 from .utils import time_solution
 
 
-@time_solution("Make Array Consecutive")
+@time_solution(module_name="Make Array Consecutive")
 def solution(statues: Union[tuple, list]) -> int:
     ranged_statues = range(min(statues), max(statues))
     missing_set = set(ranged_statues).difference(set(statues))
