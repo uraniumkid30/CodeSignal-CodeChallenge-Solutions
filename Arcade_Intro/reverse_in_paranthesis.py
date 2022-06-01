@@ -32,7 +32,7 @@ Return inputString, with all the characters that were in parentheses reversed.
 from .utils import time_solution
 
 
-@time_solution("reverse in parenthesis")
+@time_solution(module_name="reverse in parenthesis")
 def solution(inputString: str) -> str:
     s = inputString
     chars: list = list(s)
