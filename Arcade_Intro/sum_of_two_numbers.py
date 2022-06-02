@@ -29,7 +29,9 @@
 # Solution
 
 from typing import Union
+from .utils import time_solution
 
 
+@time_solution(module_name="Sum Of Two Numbers")
 def solution(param1: Union[int, float], param2: Union[int, float]) -> Union[int, float]:
     return param1 + param2
