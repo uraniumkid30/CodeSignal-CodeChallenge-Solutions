@@ -27,7 +27,10 @@ true if name is a correct variable name, false otherwise.
 
 import re
 
+from .utils import time_solution
 
+
+@time_solution(module_name="Variable Name")
 def solution(name):
     pattern = r"^[a-z,A-Z,_][0-9a-z,A-Z,_]*$"
     return True if re.match(pattern, name) else False
