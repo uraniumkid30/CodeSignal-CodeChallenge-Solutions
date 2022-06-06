@@ -2,7 +2,7 @@ from ..matrix_element_sum import solution
 import unittest
 
 
-class TestAdjacentElementProduct(unittest.TestCase):
+class TestMatrixElementSum(unittest.TestCase):
     def test_case_1(self):
         inputArray: list = [[1]]
         expected_result: int = 1
